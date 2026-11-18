@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Booking | IAS NINE WINGS TRAVELS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Poppins', sans-serif; }</style>
+</head>
+<body class="bg-amber-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="logo.jpeg" alt="IAS Nine Wings Travels Logo" class="h-14 w-14 rounded-full object-contain border border-slate-200 bg-white shadow-sm">
+                    <div class="leading-tight">
+                        <span class="block text-lg sm:text-xl font-bold text-blue-900 tracking-tight">IAS <span class="text-amber-500">NINE WINGS</span></span>
+                        <span class="block text-xs font-bold text-blue-900 tracking-widest">TRAVELS</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+                    <a href="destinations.html" class="hover:text-amber-500 transition">Destinations</a>
+                    <a href="packages.html" class="hover:text-amber-500 transition">Packages</a>
+                    <a href="services.html" class="hover:text-amber-500 transition">Services</a>
+                    <a href="contact.html" class="text-amber-500 font-semibold">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-2.5 rounded-full shadow-md transition">Book Now</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="index.html" class="block py-2 text-slate-700">Home</a>
+            <a href="destinations.html" class="block py-2 text-slate-700">Destinations</a>
+            <a href="packages.html" class="block py-2 text-slate-700">Packages</a>
+            <a href="services.html" class="block py-2 text-slate-700">Services</a>
+            <a href="contact.html" class="block py-2 text-amber-500 font-semibold">Book Now</a>
+        </div>
+    </header>
+
+    <main class="flex-1 pt-28 pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-5 w-full">
+            <div class="bg-slate-900 text-white p-8 md:col-span-2 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-3 mb-5">
+                        <img src="logo.jpeg" alt="IAS Nine Wings Travels" class="h-12 w-12 rounded-full object-contain bg-white p-0.5">
+                        <h3 class="text-xl font-bold leading-snug">IAS Nine Wings Travels</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-8">Share your preferred temple yatra or holiday destination in India, and our specialists will call you within 2 hours.</p>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+                            <span>123 Travel Avenue, Suite 400, Hyderabad, India</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-amber-400"></i>
+                            <span>bookings@iasninewingstravels.in</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-4 mt-8">
+                    <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="p-8 md:col-span-3">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Book Your Indian Journey</h2>
+                <form id="inquiry-form" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
+                            <input type="text" required placeholder="Rahul Sharma" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Phone / WhatsApp</label>
+                            <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
+                            <input type="email" required placeholder="rahul@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Indian Destination / Yatra</label>
+                            <input id="destination" type="text" placeholder="e.g., Varanasi, Tirupati, Kerala" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Trip Details &amp; Requirements</label>
+                        <textarea id="requirements" rows="3" placeholder="Tell us your pickup city in India, travel dates, number of travelers..." class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 rounded-xl shadow-md transition">
+                        Send India Travel Inquiry
+                    </button>
+
+                    <p id="form-feedback" class="hidden text-emerald-600 text-sm font-medium text-center pt-2">
+                        Thank you! Your domestic travel inquiry has been received by IAS Nine Wings Travels.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; 2026 IAS Nine Wings Travels. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Auto-fill fields if redirected from Home, Destinations, or Packages
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('dest')) {
+            document.getElementById('destination').value = params.get('dest');
+        }
+        if (params.get('date') || params.get('guests')) {
+            document.getElementById('requirements').value = `Preferred Date: ${params.get('date') || 'Flexible'} | Guests: ${params.get('guests') || '2 Adults'}`;
+        }
+
+        document.getElementById('inquiry-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('form-feedback').classList.remove('hidden');
+            e.target.reset();
+        });
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
