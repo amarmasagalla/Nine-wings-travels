@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | IAS NINE WINGS TRAVELS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Poppins', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="logo.jpeg" alt="IAS Nine Wings Travels Logo" class="h-14 w-14 rounded-full object-contain border border-slate-200 bg-white shadow-sm">
+                    <div class="leading-tight">
+                        <span class="block text-lg sm:text-xl font-bold text-blue-900 tracking-tight">IAS <span class="text-amber-500">NINE WINGS</span></span>
+                        <span class="block text-xs font-bold text-blue-900 tracking-widest">TRAVELS</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+                    <a href="destinations.html" class="hover:text-amber-500 transition">Destinations</a>
+                    <a href="packages.html" class="hover:text-amber-500 transition">Packages</a>
+                    <a href="services.html" class="text-amber-500 font-semibold">Services</a>
+                    <a href="contact.html" class="hover:text-amber-500 transition">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-2.5 rounded-full shadow-md transition">Book Now</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="index.html" class="block py-2 text-slate-700">Home</a>
+            <a href="destinations.html" class="block py-2 text-slate-700">Destinations</a>
+            <a href="packages.html" class="block py-2 text-slate-700">Packages</a>
+            <a href="services.html" class="block py-2 text-amber-500 font-semibold">Services</a>
+            <a href="contact.html" class="block py-2 text-amber-500 font-semibold">Book Now</a>
+        </div>
+    </header>
+
+    <main class="flex-1 pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="text-center mb-14">
+            <span class="text-amber-500 font-semibold uppercase tracking-wider text-sm">What We Offer</span>
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1">Our India Travel Services</h1>
+            <p class="text-slate-500 mt-3 max-w-xl mx-auto">Complete end-to-end domestic travel support for families, senior citizens, and groups across India.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-14">
+            <div class="bg-white p-6 rounded-2xl shadow-md text-center border border-slate-100">
+                <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl">
+                    <i class="fa-solid fa-gopuram"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Temple Darshan &amp; Yatra</h3>
+                <p class="text-slate-500 text-sm">Special senior-friendly pilgrimage planning for Tirupati, Varanasi, Char Dham, Shirdi, and Rameswaram.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-md text-center border border-slate-100">
+                <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl">
+                    <i class="fa-solid fa-train-subway"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Domestic Flights &amp; Trains</h3>
+                <p class="text-slate-500 text-sm">Best airfares across India and confirmed IRCTC train ticket bookings for seamless city-to-city travel.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-md text-center border border-slate-100">
+                <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl">
+                    <i class="fa-solid fa-car-side"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Outstation Cabs &amp; Tempo</h3>
+                <p class="text-slate-500 text-sm">Well-maintained AC sedans, Innova Crysta SUVs, and Tempo Travellers with experienced local drivers.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-md text-center border border-slate-100">
+                <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl">
+                    <i class="fa-solid fa-hotel"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Verified Stays &amp; Resorts</h3>
+                <p class="text-slate-500 text-sm">Clean, family-friendly hotels near major temples, hill stations, beaches, and heritage landmarks.</p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="contact.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3.5 rounded-full shadow-md transition">
+                Request a Custom Travel Service
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; 2026 IAS Nine Wings Travels. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
