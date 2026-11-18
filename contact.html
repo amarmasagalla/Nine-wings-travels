@@ -45,21 +45,22 @@
 
     <main class="flex-1 pt-28 pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center">
         <div class="bg-white rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-5 w-full">
+            <!-- Left Contact Info Side -->
             <div class="bg-slate-900 text-white p-8 md:col-span-2 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center space-x-3 mb-5">
                         <img src="logo.jpeg" alt="IAS Nine Wings Travels" class="h-12 w-12 rounded-full object-contain bg-white p-0.5">
                         <h3 class="text-xl font-bold leading-snug">IAS Nine Wings Travels</h3>
                     </div>
-                    <p class="text-slate-400 text-sm mb-8">Share your preferred temple yatra or holiday destination in India, and our specialists will call you within 2 hours.</p>
+                    <p class="text-slate-400 text-sm mb-8">Share your preferred temple yatra or holiday destination in India, and our specialists will reply on WhatsApp within 2 hours.</p>
                     <div class="space-y-4 text-sm">
                         <div class="flex items-start space-x-3">
                             <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
                             <span>123 Travel Avenue, Suite 400, Hyderabad, India</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <i class="fa-solid fa-phone text-amber-400"></i>
-                            <span>+91 98765 43210</span>
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                            <a href="https://wa.me/919849150174" target="_blank" class="hover:text-amber-400 transition">+91 98491 50174</a>
                         </div>
                         <div class="flex items-center space-x-3">
                             <i class="fa-solid fa-envelope text-amber-400"></i>
@@ -68,48 +69,50 @@
                     </div>
                 </div>
                 <div class="flex space-x-4 mt-8">
-                    <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919849150174" target="_blank" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-emerald-600 hover:bg-emerald-500 flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
 
+            <!-- Right Inquiry Form Side -->
             <div class="p-8 md:col-span-3">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6">Book Your Indian Journey</h2>
                 <form id="inquiry-form" class="space-y-4">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
-                            <input type="text" required placeholder="Rahul Sharma" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
+                            <label for="full-name" class="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
+                            <input id="full-name" type="text" required placeholder="Rahul Sharma" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Phone / WhatsApp</label>
-                            <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
+                            <label for="phone" class="block text-sm font-medium text-slate-700 mb-1">Phone / WhatsApp</label>
+                            <input id="phone" type="tel" required placeholder="+91 98491 50174" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
-                            <input type="email" required placeholder="rahul@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
+                            <input id="email" type="email" placeholder="rahul@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Indian Destination / Yatra</label>
-                            <input id="destination" type="text" placeholder="e.g., Varanasi, Tirupati, Kerala" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
+                            <label for="destination" class="block text-sm font-medium text-slate-700 mb-1">Indian Destination / Yatra</label>
+                            <input id="destination" type="text" required placeholder="e.g., Varanasi, Tirupati, Kerala" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none">
                         </div>
                     </div>
 
                     <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-1">Trip Details &amp; Requirements</label>
+                        <label for="requirements" class="block text-sm font-medium text-slate-700 mb-1">Trip Details &amp; Requirements</label>
                         <textarea id="requirements" rows="3" placeholder="Tell us your pickup city in India, travel dates, number of travelers..." class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-amber-500 focus:outline-none"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 rounded-xl shadow-md transition">
-                        Send India Travel Inquiry
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl shadow-md transition flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Send Inquiry via WhatsApp</span>
                     </button>
 
                     <p id="form-feedback" class="hidden text-emerald-600 text-sm font-medium text-center pt-2">
-                        Thank you! Your domestic travel inquiry has been received by IAS Nine Wings Travels.
+                        Redirecting to WhatsApp (+91 98491 50174) with your inquiry details...
                     </p>
                 </form>
             </div>
@@ -130,10 +133,29 @@
             document.getElementById('requirements').value = `Preferred Date: ${params.get('date') || 'Flexible'} | Guests: ${params.get('guests') || '2 Adults'}`;
         }
 
+        // Send Form Details Directly to WhatsApp (9849150174)
         document.getElementById('inquiry-form').addEventListener('submit', (e) => {
             e.preventDefault();
+
+            const name = document.getElementById('full-name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim() || 'Not provided';
+            const destination = document.getElementById('destination').value.trim();
+            const requirements = document.getElementById('requirements').value.trim() || 'No extra notes';
+
+            const whatsappNumber = '919849150174';
+            const message =
+                `*New Travel Inquiry - IAS Nine Wings Travels*\n\n` +
+                `*Name:* ${name}\n` +
+                `*Phone:* ${phone}\n` +
+                `*Email:* ${email}\n` +
+                `*Destination / Package:* ${destination}\n` +
+                `*Trip Details:* ${requirements}`;
+
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
             document.getElementById('form-feedback').classList.remove('hidden');
-            e.target.reset();
+            window.open(whatsappURL, '_blank');
         });
 
         document.getElementById('mobile-menu-btn').addEventListener('click', () => {
