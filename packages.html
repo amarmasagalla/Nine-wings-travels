@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages | IAS NINE WINGS TRAVELS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Poppins', sans-serif; }</style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="logo.jpeg" alt="IAS Nine Wings Travels Logo" class="h-14 w-14 rounded-full object-contain border border-slate-200 bg-white shadow-sm">
+                    <div class="leading-tight">
+                        <span class="block text-lg sm:text-xl font-bold text-blue-900 tracking-tight">IAS <span class="text-amber-500">NINE WINGS</span></span>
+                        <span class="block text-xs font-bold text-blue-900 tracking-widest">TRAVELS</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+                    <a href="destinations.html" class="hover:text-amber-500 transition">Destinations</a>
+                    <a href="packages.html" class="text-amber-500 font-semibold">Packages</a>
+                    <a href="services.html" class="hover:text-amber-500 transition">Services</a>
+                    <a href="contact.html" class="hover:text-amber-500 transition">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-2.5 rounded-full shadow-md transition">Book Now</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="index.html" class="block py-2 text-slate-700">Home</a>
+            <a href="destinations.html" class="block py-2 text-slate-700">Destinations</a>
+            <a href="packages.html" class="block py-2 text-amber-500 font-semibold">Packages</a>
+            <a href="services.html" class="block py-2 text-slate-700">Services</a>
+            <a href="contact.html" class="block py-2 text-amber-500 font-semibold">Book Now</a>
+        </div>
+    </header>
+
+    <main class="flex-1 pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="text-center mb-14">
+            <span class="text-amber-500 font-semibold uppercase tracking-wider text-sm">All-Inclusive Domestic Plans</span>
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1">Featured Spiritual &amp; Touring Packages</h1>
+            <p class="text-slate-500 mt-3 max-w-xl mx-auto">Complete Indian tour itineraries covering verified hotels, temple darshan assistance, meals, and private cabs.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-md border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full mb-4">Sacred Yatra</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Kashi – Prayagraj – Ayodhya</h3>
+                    <p class="text-slate-500 text-sm mb-4">5 Days / 4 Nights Spiritual Circuit</p>
+                    <div class="text-3xl font-bold text-slate-900 mb-6">₹15,499 <span class="text-sm font-normal text-slate-400">/ person</span></div>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Kashi Vishwanath &amp; Ram Mandir Darshan</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Triveni Sangam Holy Dip in Prayagraj</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Clean Family Hotels Near Temples</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Private AC Vehicle &amp; Pure Veg Meals</li>
+                    </ul>
+                </div>
+                <a href="contact.html?dest=Kashi%20-%20Prayagraj%20-%20Ayodhya%20Yatra" class="w-full text-center bg-slate-900 hover:bg-amber-500 text-white font-semibold py-3 rounded-xl transition">Book Yatra Package</a>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-xl border-2 border-amber-500 flex flex-col justify-between relative">
+                <span class="absolute -top-3.5 right-6 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Most Booked</span>
+                <div>
+                    <span class="inline-block bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full mb-4">Scenic Holiday</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Magical Kashmir Valley</h3>
+                    <p class="text-slate-500 text-sm mb-4">Srinagar • Gulmarg • Pahalgam (6D / 5N)</p>
+                    <div class="text-3xl font-bold text-slate-900 mb-6">₹21,499 <span class="text-sm font-normal text-slate-400">/ person</span></div>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> 1 Night Dal Lake Luxury Houseboat</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Complimentary 1-Hour Shikara Ride</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Daily Breakfast &amp; Dinner Included</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Srinagar Airport Pickup &amp; Sightseeing</li>
+                    </ul>
+                </div>
+                <a href="contact.html?dest=Magical%20Kashmir%20Valley" class="w-full text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 rounded-xl shadow-md transition">Book Holiday Package</a>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-md border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full mb-4">South India Special</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Madurai – Rameswaram – Kanyakumari</h3>
+                    <p class="text-slate-500 text-sm mb-4">5 Days / 4 Nights Divine &amp; Coastal Tour</p>
+                    <div class="text-3xl font-bold text-slate-900 mb-6">₹14,999 <span class="text-sm font-normal text-slate-400">/ person</span></div>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Meenakshi Amman &amp; Ramanathaswamy Darshan</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Vivekananda Rock &amp; Sunrise Viewpoint</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Comfortable 3-Star Hotel Stays</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2.5"></i> Private AC Cab &amp; Daily Breakfast</li>
+                    </ul>
+                </div>
+                <a href="contact.html?dest=Madurai%20-%20Rameswaram%20-%20Kanyakumari" class="w-full text-center bg-slate-900 hover:bg-amber-500 text-white font-semibold py-3 rounded-xl transition">Book This Package</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; 2026 IAS Nine Wings Travels. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
