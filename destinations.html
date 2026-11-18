@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | IAS NINE WINGS TRAVELS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Poppins', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="logo.jpeg" alt="IAS Nine Wings Travels Logo" class="h-14 w-14 rounded-full object-contain border border-slate-200 bg-white shadow-sm">
+                    <div class="leading-tight">
+                        <span class="block text-lg sm:text-xl font-bold text-blue-900 tracking-tight">IAS <span class="text-amber-500">NINE WINGS</span></span>
+                        <span class="block text-xs font-bold text-blue-900 tracking-widest">TRAVELS</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+                    <a href="destinations.html" class="text-amber-500 font-semibold">Destinations</a>
+                    <a href="packages.html" class="hover:text-amber-500 transition">Packages</a>
+                    <a href="services.html" class="hover:text-amber-500 transition">Services</a>
+                    <a href="contact.html" class="hover:text-amber-500 transition">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-2.5 rounded-full shadow-md transition">Book Now</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="index.html" class="block py-2 text-slate-700">Home</a>
+            <a href="destinations.html" class="block py-2 text-amber-500 font-semibold">Destinations</a>
+            <a href="packages.html" class="block py-2 text-slate-700">Packages</a>
+            <a href="services.html" class="block py-2 text-slate-700">Services</a>
+            <a href="contact.html" class="block py-2 text-amber-500 font-semibold">Book Now</a>
+        </div>
+    </header>
+
+    <main class="flex-1 pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="text-center mb-14">
+            <span class="text-amber-500 font-semibold uppercase tracking-wider text-sm">Explore India Only</span>
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1">Famous Spiritual &amp; Touring Places</h1>
+            <p class="text-slate-500 mt-3 max-w-2xl mx-auto">Handpicked sacred temple towns and scenic holiday destinations across every corner of India.</p>
+        </div>
+
+        <div class="flex items-center space-x-3 mb-6">
+            <span class="bg-amber-500 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">Spiritual &amp; Pilgrimage</span>
+            <div class="h-px bg-slate-200 flex-1"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80" alt="Varanasi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">4 Days / 3 Nights</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Varanasi &amp; Ayodhya, UP</h3>
+                        <span class="text-amber-500 font-bold text-lg">₹12,999</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Kashi Vishwanath Darshan, evening Ganga Aarti, Sarnath, and Shri Ram Janmabhoomi.</p>
+                    <a href="contact.html?dest=Varanasi%20%26%20Ayodhya" class="text-amber-600 font-semibold text-sm hover:underline flex items-center">Inquire Darshan Package <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80" alt="Tirupati" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">3 Days / 2 Nights</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Tirupati Balaji, AP</h3>
+                        <span class="text-amber-500 font-bold text-lg">₹8,499</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Tirumala Sri Venkateswara Swamy Darshan assistance, Padmavathi Temple, and Sri Kalahasti.</p>
+                    <a href="contact.html?dest=Tirupati%20Balaji" class="text-amber-600 font-semibold text-sm hover:underline flex items-center">Inquire Darshan Package <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1591018653367-9c01498b3320?auto=format&fit=crop&w=800&q=80" alt="Rishikesh" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">4 Days / 3 Nights</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Haridwar &amp; Rishikesh, UK</h3>
+                        <span class="text-amber-500 font-bold text-lg">₹11,499</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Sacred dip at Har Ki Pauri, Lakshman Jhula, Triveni Ghat Aarti, and Himalayan retreats.</p>
+                    <a href="contact.html?dest=Haridwar%20%26%20Rishikesh" class="text-amber-600 font-semibold text-sm hover:underline flex items-center">Inquire Darshan Package <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-3 mb-6">
+            <span class="bg-slate-900 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">Famous Touring Places</span>
+            <div class="h-px bg-slate-200 flex-1"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">5 Days / 4 Nights</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Munnar &amp; Alleppey, Kerala</h3>
+                        <span class="text-amber-500 font-bold text-lg">₹16,999</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Lush green tea gardens, misty hills, traditional houseboat stays, and backwater cruises.</p>
+                    <a href="contact.html?dest=Munnar%20%26%20Alleppey%20Kerala" class="text-amber-600 font-semibold text-sm hover:underline flex items-center">Inquire Package <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" alt="Manali" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">6 Days / 5 Nights</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Manali &amp; Shimla, Himachal</h3>
+                        <span class="text-amber-500 font-bold text-lg">₹14,499</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Snow-covered Rohtang &amp; Solang Valley, Mall Road strolls, Atal Tunnel, and mountain resorts.</p>
+                    <a href="contact.html?dest=Manali%20%26%20Shimla" class="text-amber-600 font-semibold text-sm hover:underline flex items-center">Inquire Package <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80" alt="Rajasthan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">5 Days / 4 Nights</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Jaipur &amp; Udaipur, Rajasthan</h3>
+                        <span class="text-amber-500 font-bold text-lg">₹18,500</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-4">Majestic Amer Fort, City Palace, Lake Pichola sunset boat rides, and royal hospitality.</p>
+                    <a href="contact.html?dest=Jaipur%20%26%20Udaipur" class="text-amber-600 font-semibold text-sm hover:underline flex items-center">Inquire Package <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; 2026 IAS Nine Wings Travels. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
